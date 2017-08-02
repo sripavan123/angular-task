@@ -1,0 +1,39 @@
+<!--Find all pairs in array of integers whose sum is equal to given number.
+Input: sum = 8
+[1, 4, 3, 5, 4, 6, 7, 8, 3]
+Output:
+"1, 7"
+"4, 4"
+"3, 5"
+"5, 3"-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the pairs list for sum 8 </p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+
+var list = [1, 4, 3, 5, 4, 6, 7, 8, 3];
+var sum = 8;
+
+for(i=0;i<=list.length-1;i++){
+for(j=i+1;j<=list.length-1;j++)
+{
+if(list[i]+list[j] == sum){
+console.log("pair is",list[i],list[j])
+}
+
+}
+
+}
+}
+</script>
+
+</body>
+</html> 

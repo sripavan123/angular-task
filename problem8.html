@@ -1,0 +1,35 @@
+<!--Given an object, containing names as keys and amount_paid by each of them as
+values, write a function that takes such an object as input and calculates the total sum paid by them together.
+Input: {"Rick": 85, "Amit": 42, "George": 53, "Tanya": 60, "Linda": 35}
+Output: 275-->
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<p>Click the button to display the result of duplicates in array</p>
+ 
+<button onclick="myFunction()">Try it</button>
+ 
+<p id="demo"></p>
+ 
+<script>
+function myFunction(){
+var sample = {"Rick": 1, "Amit": 2, "George": 3, "Tanya": 1, "Linda": 1};
+var summed = sum( sample );
+function sum( obj ) {
+  var sum = 0;
+  for( var el in obj ) {
+    if( obj.hasOwnProperty( el ) ) {
+      sum += obj[el];
+    }
+  }
+  return sum;
+}
+
+console.log("summed"+" "+summed);
+}
+
+</script>
+ 
+</body>
+</html> 

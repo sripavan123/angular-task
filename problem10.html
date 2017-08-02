@@ -1,0 +1,42 @@
+<!--Write a function that takes an array of words and returns an array containing
+only of palindromes.
+Note: Use the above function to check if a word is a palindrome.
+Input: ["Malayalam", "tree", "boat", "civic", "melt", "level"]
+Output: ["Malayalam", "civic", "level"]
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sum the multiples of 3 and 5 under 1000</title>
+  <script type = "text/javascript">
+   var string =["madam","Volvo","BMW"];
+    var newstring =[];
+	function palindrome(str) {
+    var len = str.length;
+	 for ( var i = 0; i < Math.floor(len/2); i++ ) {
+        if (str[i] !== str[len - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+   function palindromeResult(string){
+   var fLen = string.length;
+    for (i = 0; i < fLen; i++) {
+	var text = string[i];
+	 var result = palindrome(text);
+	 if(result === true){
+	newstring.push(text);
+		}
+		
+	}
+	return newstring;
+   }
+  var result = palindromeResult(string);
+ console.log("result"+" "+result);
+
+</script>
+</head>
+<body>
+</body>
+</html>
